@@ -21,66 +21,65 @@
         </nav>
 
         <!-- Main Content Area -->
-        <main class="main-content">
-            <!-- Writer Section -->
-            <section id="writerSection" class="writer-section" style="display: none;">
-                <div class="writer-header">
-                    <h2>✍️ Write Your Book</h2>
-                    <p>Create your masterpiece chapter by chapter</p>
-                </div>
+     <main class="main-content">
+    <!-- Writer Section -->
+    <section id="writerSection" class="writer-section" style="display: none;">
+        <div class="writer-header">
+            <h2>✍️ Write Your Book</h2>
+            <p>Create your masterpiece chapter by chapter</p>
+        </div>
 
-                <div class="writer-container">
-                    <!-- Book Info Sidebar -->
-                    <div class="writer-sidebar">
-                        <div class="book-info-panel">
-                            <h3>Book Details</h3>
-                            <div class="form-group">
-                                <label for="bookTitleWriter">Title</label>
-                                <input type="text" id="bookTitleWriter" placeholder="Your book title" maxlength="200">
-                            </div>
-                            <div class="form-group">
-                                <label for="authorWriter">Author</label>
-                                <input type="text" id="authorWriter" placeholder="Your name" maxlength="100">
-                            </div>
-                            <div class="form-group">
-                                <label for="genreWriter">Genre</label>
-                                <input type="text" id="genreWriter" placeholder="e.g., Fiction, Mystery..." list="genreList">
-                            </div>
-                        </div>
-
-                        <div class="chapters-panel">
-                            <div class="panel-header">
-                                <h3>Chapters</h3>
-                                <button class="btn btn-primary btn-tiny" onclick="addWriterChapter()">+</button>
-                            </div>
-                            <div id="chaptersListWriter" class="chapters-list">
-                                <!-- Chapters will be added here -->
-                            </div>
-                        </div>
-
-                        <div class="writer-actions">
-                            <button class="btn btn-secondary" id="newBookBtn">📝 New Book</button>
-                            <button class="btn btn-primary" id="publishWriterBtn">🚀 Publish Book</button>
-                        </div>
+        <div class="writer-container">
+            <!-- Book Info Sidebar -->
+            <div class="writer-sidebar">
+                <div class="book-info-panel">
+                    <h3>Book Details</h3>
+                    <div class="form-group">
+                        <label for="bookTitleWriter">Title</label>
+                        <input type="text" id="bookTitleWriter" placeholder="Your book title" maxlength="200">
                     </div>
-
-                    <!-- Editor Area -->
-                    <div class="editor-area">
-                        <div class="editor-header">
-                            <input type="text" id="chapterTitle" placeholder="Chapter Title" class="chapter-title-input">
-                            <div class="editor-stats">
-                                <span>✍️ <span id="wordCount">0</span> words</span>
-                                <span>📝 <span id="charCount">0</span> characters</span>
-                                <button class="btn btn-secondary btn-small" id="saveChapterBtn">Save</button>
-                            </div>
-                        </div>
-                        <textarea id="chapterContentEditor" class="content-editor" placeholder="Start writing your chapter here... Your text will be auto-saved when you move to another chapter."></textarea>
+                    <div class="form-group">
+                        <label for="authorWriter">Author</label>
+                        <input type="text" id="authorWriter" placeholder="Your name" maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="genreWriter">Genre</label>
+                        <input type="text" id="genreWriter" placeholder="e.g., Fiction, Mystery..." list="genreList">
                     </div>
                 </div>
 
-                <div id="statusMessage" class="status-message"></div>
-            </section>
+                <div class="chapters-panel">
+                    <div class="panel-header">
+                        <h3>Chapters</h3>
+                        <button class="btn btn-primary btn-tiny" onclick="addWriterChapter()">+</button>
+                    </div>
+                    <div id="chaptersListWriter" class="chapters-list">
+                        <!-- Chapters will be added here -->
+                    </div>
+                </div>
 
+                <div class="writer-actions">
+                    <button class="btn btn-secondary" id="newBookBtn">📝 New Book</button>
+                    <button class="btn btn-primary" id="publishWriterBtn">🚀 Publish Book</button>
+                </div>
+            </div>
+
+            <!-- Editor Area -->
+            <div class="editor-area">
+                <div class="editor-header">
+                    <input type="text" id="chapterTitle" placeholder="Chapter Title" class="chapter-title-input">
+                    <div class="editor-stats">
+                        <span>✍️ <span id="wordCount">0</span> words</span>
+                        <span>📝 <span id="charCount">0</span> characters</span>
+                        <button class="btn btn-secondary btn-small" id="saveChapterBtn">Save</button>
+                    </div>
+                </div>
+                <textarea id="chapterContentEditor" class="content-editor" placeholder="Start writing your chapter here... Your text will be auto-saved when you move to another chapter."></textarea>
+            </div>
+        </div>
+
+        <div id="statusMessage" class="status-message"></div>
+    </section>
             <!-- Publisher Section -->
             <section id="publisherSection" class="publisher-section">
                 <div class="publisher-header">
